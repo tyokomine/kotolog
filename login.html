@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>ことろぐ -忘れたくない大切な言葉-</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/parally.css" rel="stylesheet">
+		<link href="css/top.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="index_main">
+			<div id="index_title">
+				ことろぐ
+			</div>
+			<form id="login" action="" method="post">
+				<dl id="index_form">
+					<dt>
+						e-mail or name
+					</dt>
+					<dd>
+						<input id="name" name="mail" type="text" value="" size ="30" />
+					</dd>
+					<dt>
+						password
+					</dt>
+					<dd>
+						<input id="pass" name="password" type="password" value="" />
+					</dd>
+				</dl>
+				<div id="index_login">
+					<input name="action" type="button" value="login" onclick="login();" />
+				</div>
+			</form>
+			<div id="error"></div>
+			<a href="./user_register.html" style="font-size: 17px; margin-left: 100px">※新規登録はこちら</a>
+			<br>
+			<a href="#" style="margin-left: 100px; color: gray">※パスワードを忘れた方はこちら</a>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/top.js"></script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>ことろぐ -忘れたくない大切な言葉-</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/parally.css" rel="stylesheet">
+		<link href="../css/top.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="forget_main">
+			<div id="forget_title">
+				パスワードを忘れた方へ
+			</div>
+			<div id="forget_subtitle">
+				登録したe-mailを入力して下さい。
+				<br />
+				パスワードを再発行します。
+			</div>
+			<form action="./php/forget.php" method="post" id="register">
+				<dl id="index_form">
+					<dt>
+						e-mail
+					</dt>
+					<dd>
+						<input name="mail" type="text" value="himaratsu@gmail.com" />
+					</dd>
+				</dl>
+				<div id="rgst_btn">
+					<input name="action" type="submit" value="saihakko" />
+				</div>
+			</form>
+			<a href="index.php" style="font-size: 17px; margin-left: 235px">戻る</a>
+		</div>
+	</body>
+</html>

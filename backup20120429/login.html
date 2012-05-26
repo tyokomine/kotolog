@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>ことろぐ -忘れたくない大切な言葉-</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/parally.css" rel="stylesheet">
+		<link href="css/top.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="index_main">
+			<div id="index_title">
+				ことろぐ
+			</div>
+			<form action="./index.php" method="post">
+				<dl id="index_form">
+					<dt>
+						e-mail or name
+					</dt>
+					<dd>
+						<input name="mail" type="text" value="z.ibra.veste@gmail.com" size ="30" />
+					</dd>
+					<dt>
+						password
+					</dt>
+					<dd>
+						<input name="password" type="text" value="kotolog" />
+					</dd>
+				</dl>
+				<div id="index_login">
+					<input name="action" type="submit" value="login" />
+				</div>
+			</form>
+			<a href="./php/user_register.php" style="font-size: 17px; margin-left: 100px">※新規登録はこちら</a>
+			<br>
+			<a href="#" style="margin-left: 100px; color: gray">※パスワードを忘れた方はこちら</a>
+		</div>
+	</body>
+</html>

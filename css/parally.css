@@ -1,0 +1,255 @@
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	font-family: Meiryo UI;
+	background-image: url("../img/bg.gif");
+	/*	background-color: #dee0e4;*/
+	margin: 0;
+	padding: 0;
+	padding-top: 60px;
+}
+/* メインコンテンツエリア */
+div#contentArea {
+	padding: 50px;
+	overflow: auto;
+}
+div#ContextBar {
+	/*	min-height: 24px;*/
+	margin: -70px 0 10px;
+	padding: 60px 30px 7px;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+	border-bottom: double 3px #999999;
+}
+div.Tile, div.Tile2 {
+	position: relative;
+	height: 200px;
+	width: 270px;
+	background-color: White;
+	margin: 10px;
+	float: left;
+	text-shadow: 0 1px 0 #fff;
+	-webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+}
+/* mouse over */
+div.Tile:hover, div.Tile2:hover {
+	-webkit-transform: scale(1.01, 1.01);
+	background-color: #fefefe;
+	background-repeat: no-repeat;
+	background-position: right top;
+	/*	opacity: 0.75;*/
+}
+span.TileCategory {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	font-family: Meiryo UI;
+	font-size: 10pt;
+	color: #999999;
+}
+span.TileCitation {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	font-family: Meiryo UI;
+	font-size: 10pt;
+	color: #999999;
+}
+span.TileContents, span.DispTileContents {
+	position: absolute;
+	padding: 10px;
+	top: 12%;
+	line-height: 1.2;
+	font-family: Meiryo UI;
+	font-size: 12pt;
+	color: Black;
+	cursor: pointer;
+}
+/* モーダルここから */
+
+#glayLayer {
+	display: none;
+	position: fixed;
+	z-index: 99998;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: black;
+	filter: alpha(opacity=75);
+	opacity: 0.75;
+}
+* html #glayLayer {
+	position: absolute;
+}
+#overLayer {
+	display: none;
+	z-index: 99999;
+	width: 500px;
+	height: 400px;
+	background: white;
+	padding: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+* html #overLayer {
+	position: absolute;
+}
+div#ShowButtons {
+	margin-top: 10px;
+	padding-top: 10px;
+	bottom: 5px;
+	border-top: solid 1px #999999;
+}
+div#ShowContents {
+	height: 300px;
+	padding: 20px 10px;
+}
+span#ModalMemoCategory {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	font-family: Meiryo UI;
+	font-size: 12pt;
+	color: #999999;
+}
+span#ModalMemoCitation {
+	position: absolute;
+	bottom: 70px;
+	left: 30px;
+	font-family: Meiryo UI;
+	font-size: 12pt;
+	color: #999999;
+}
+div#ModalMemoContents {
+	position: absolute;
+	margin-bottom: 20px;
+	line-height: 1.2;
+	font-family: Meiryo UI;
+	font-size: 24pt;
+	color: Black;
+}
+/* インデックスのcssここから */
+div#index_main {
+	width: 400px;
+	height: 350px;
+	margin: 80px auto;
+	background-color: white;
+	padding-bottom: 10px;
+	-webkit-box-shadow: 0 10px 10px rgba(0,0,0, 0.7);
+	-moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+div#index_title {
+	width: 400px;
+	padding: 5px 0;
+	font-size: 30px;
+	color: white;
+	line-height: 1.2;
+	text-align: center;
+	background-color: #333;
+}
+dl#index_form {
+	margin: 30px 10px 10px;
+}
+#index_form dt {
+	width: 200px;
+	margin: 5px auto 1px;
+	text-align: left;
+}
+#index_form dd {
+	width: 200px;
+	margin: 0 auto;
+	text-align: left;
+}
+div#index_login {
+	text-align: center;
+}
+#index_login input {
+	width: 150px;
+	font-size: 20px;
+	background-color: #333;
+	color: white;
+	line-height: 1.2;
+}
+/* ユーザ登録ここから */
+div#user_rgst_main {
+	width: 500px;
+	height: 400px;
+	margin: 50px auto;
+	background-color: white;
+	padding-bottom: 10px;
+	-webkit-box-shadow: 0 10px 10px rgba(0,0,0, 0.7);
+	-moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+div#user_rgst_subtitle {
+	font-size: 15px;
+	margin: 30px 0px 0px;
+	text-align: center;
+}
+div#user_rgst_title {
+	width: 500px;
+	padding: 5px 0;
+	font-size: 30px;
+	color: white;
+	line-height: 1.2;
+	text-align: center;
+	background-color: #333;
+}
+div#rgst_btn {
+	text-align: center;
+}
+div#rgst_btn input {
+	width: 150px;
+	font-size: 20px;
+	background-color: #333;
+	color: white;
+	line-height: 1.5;
+}
+div#error{
+		color: red;
+	text-align: center;
+	margin: 10px;
+}
+
+/* パスワードを忘れた方はこちら */
+div#forget_main {
+	width: 500px;
+	height: 400px;
+	margin: 50px auto;
+	background-color: white;
+	padding-bottom: 10px;
+	-webkit-box-shadow: 0 10px 10px rgba(0,0,0, 0.7);
+	-moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+div#forget_subtitle {
+	font-size: 15px;
+	margin: 30px 0px 0px;
+	text-align: center;
+}
+div#forget_title {
+	width: 500px;
+	padding: 5px 0;
+	font-size: 30px;
+	color: white;
+	line-height: 1.2;
+	text-align: center;
+	background-color: #333;
+}
+div#rgst_btn {
+	text-align: center;
+}
+div#rgst_btn input {
+	width: 150px;
+	font-size: 20px;
+	background-color: #333;
+	color: white;
+	line-height: 1.5;
+}

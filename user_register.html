@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>ことろぐ -忘れたくない大切な言葉-</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/parally.css" rel="stylesheet">
+		<link href="../css/top.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="user_rgst_main">
+			<div id="user_rgst_title">
+				Welcome!
+			</div>
+			<div id="user_rgst_subtitle">
+				ことろぐへようこそ！
+				<br>
+				ササッと登録してさっそくはじめましょう！
+			</div>
+			<form action="./php/user_register.php" method="post" id="register">
+				<dl id="index_form">
+					<dt>
+						name
+					</dt>
+					<dd>
+						<input name="name" type="text" size ="30" value="tyokomine" />
+					</dd>
+					<dt>
+						e-mail
+					</dt>
+					<dd>
+						<input name="mail" type="text" value="z.ibra.veste@gmail.com" />
+					</dd>
+					<dt>
+						password
+					</dt>
+					<dd>
+						<input name="password" type="text" value="kotolog" />
+					</dd>
+				</dl>
+				<div id="rgst_btn">
+					<input name="action" type="submit" value="register" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
