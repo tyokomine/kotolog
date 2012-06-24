@@ -7,7 +7,6 @@
 		<link href="css/parally.css" rel="stylesheet">
 		<link href="css/top.css" rel="stylesheet">
 	</head>
-	<body id="body">
 		<?php
 		//ヘッダー部分の呼び出し
 		require './php/header.php';

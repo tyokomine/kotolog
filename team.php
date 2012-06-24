@@ -47,7 +47,7 @@
 					<img src="img/member1.png">
 				</div>
 				<div class="Tile">
-					<span class="TileContents">Facebookを越えるサービスをつくる！</span>
+					<span class="TileContents">Make the world more open and connected！</span>
 					<span class="TileCitation">横峯樹</span>
 				</div>
 				<div class="Tile">

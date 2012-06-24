@@ -13,6 +13,13 @@ if (isset($_POST["action"]) && $_POST["action"] == "register") {//POSTされたa
 	$mail = $_POST['mail'];
 	$password = $_POST['password'];
 	
+	//同じメアドをはじく
+	$sql="select member_id from member where member_mail ='" . r($mail) . "'";
+	$result_flag = mysql_query($sql);
+	if($result_flagl){
+		
+	}
+	
 	$sql = "insert into member (member_en_name,member_mail,member_password,member_is_valid,member_regi_date,member_access_date)
 			 values ('" . r($name) . "','" . r($mail) . "','" . r($password) . "',1,now(),now())";
 	$result_flag = mysql_query($sql);

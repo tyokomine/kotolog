@@ -9,35 +9,37 @@
 	</head>
 	<body>
 		<div id="index_main">
-			<div id="index_title">
-				ことろぐ
-			</div>
-			<form id="login" action="" method="post">
-				<dl id="index_form">
+			<div id="top_image"></div>
+			<div id="right_box">
+				<div id="right_top">
+				<form id="login" method="post">
 					<dt>
-						e-mail or name
+						ユーザー名、またはメールアドレス
 					</dt>
 					<dd>
 						<input id="name" name="mail" type="text" value="" size ="30" />
 					</dd>
 					<dt>
-						password
+						パスワード
 					</dt>
-					<dd>
-						<input id="pass" name="password" type="password" value="" />
+					<dd style="float: left">
+						<input style="width:130px" id="pass" name="password" type="password" value="" />
 					</dd>
-				</dl>
-				<div id="index_login">
-					<input name="action" type="button" value="login" onclick="login();" />
+					<input id="login_button" name="action" type="button" value="ログイン" onclick="login();" />
+				</form>
+				<div id="facebook-connect">
+					<a href="php/fb_aouth.php"><img src="img/facebook.jpg"></a>
 				</div>
-			</form>
-			<div id="error"></div>
-			<a href="./user_register.html" style="font-size: 17px; margin-left: 100px">※新規登録はこちら</a>
-			<br>
-			<a href="#" style="margin-left: 100px; color: gray">※パスワードを忘れた方はこちら</a>
+				<div id="error"></div>
+				<a href="./user_register.html">※新規登録はこちら</a>
+				<br>
+				<a href="#">※パスワードを忘れた場合はこちら</a>
+				</div>
+				<div id="right_bottom"></div>
+			</div>
+		</div>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 			<script src="js/bootstrap.min.js"></script>
 			<script src="js/top.js"></script>
-		</div>
 	</body>
 </html>

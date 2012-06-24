@@ -34,6 +34,8 @@ function login() {
 				print_error();
 			}else{
 				console.log("surusareta.");
+				//何かおかしいのでとりあえずセッションを破棄
+				location.href="php/logout.php";
 			}
 			
 		} else {

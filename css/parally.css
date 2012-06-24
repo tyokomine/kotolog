@@ -136,47 +136,15 @@ div#ModalMemoContents {
 }
 /* インデックスのcssここから */
 div#index_main {
-	width: 400px;
-	height: 350px;
-	margin: 80px auto;
+	width: 960px;
+	height: 520px;
+	margin: 0 auto;
 	background-color: white;
-	padding-bottom: 10px;
 	-webkit-box-shadow: 0 10px 10px rgba(0,0,0, 0.7);
 	-moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
 }
-div#index_title {
-	width: 400px;
-	padding: 5px 0;
-	font-size: 30px;
-	color: white;
-	line-height: 1.2;
-	text-align: center;
-	background-color: #333;
-}
-dl#index_form {
-	margin: 30px 10px 10px;
-}
-#index_form dt {
-	width: 200px;
-	margin: 5px auto 1px;
-	text-align: left;
-}
-#index_form dd {
-	width: 200px;
-	margin: 0 auto;
-	text-align: left;
-}
-div#index_login {
-	text-align: center;
-}
-#index_login input {
-	width: 150px;
-	font-size: 20px;
-	background-color: #333;
-	color: white;
-	line-height: 1.2;
-}
+
 /* ユーザ登録ここから */
 div#user_rgst_main {
 	width: 500px;
@@ -205,6 +173,11 @@ div#user_rgst_title {
 div#rgst_btn {
 	text-align: center;
 }
+form#register {
+	font-size: 15px;
+	margin: 30px 125px 0px;
+}
+
 div#rgst_btn input {
 	width: 150px;
 	font-size: 20px;
@@ -212,8 +185,8 @@ div#rgst_btn input {
 	color: white;
 	line-height: 1.5;
 }
-div#error{
-		color: red;
+div#error {
+	color: red;
 	text-align: center;
 	margin: 10px;
 }
@@ -252,4 +225,58 @@ div#rgst_btn input {
 	background-color: #333;
 	color: white;
 	line-height: 1.5;
+}
+
+div#top_image {
+	float: left;
+	width: 700px;
+	height: 100%;
+	background-size: 100% 100%;
+	background: url('../img/top.jpeg') no-repeat;
+}
+
+div#right_box {
+	float: right;
+	width: 260px;
+	height: 100%;
+}
+
+div#right_top{
+	padding: 20px 0 0 20px;
+	width: 240px;
+	height: 240px;
+}
+
+form#login *{
+	margin-left:0;
+}
+
+form#login dt{
+	color: #999;
+}
+
+input#login_button {
+  margin-left: 9px;
+  width:70px;
+  color:#ffffff;
+  background:#999;
+  font-size:12px;
+  font-weight:bold;
+  line-height: 1.6;
+  border:1px solid #999;
+  border-radius:3px;
+  padding: 3px 8px;
+  background:-moz-linear-gradient(rgba(124,124,124,0.5), rgba(124,124,124,1));
+  background:-webkit-gradient(linear, 100% 0%, 100% 100%, from(rgba(124,124,124,0.5)), to(rgba(124,124,124,1)));
+}
+input#login_button:hover {
+  background:-moz-linear-gradient(rgba(124,124,124,0.4), rgba(124,124,124,0.9));
+  background:-webkit-gradient(linear, 100% 0%, 100% 100%, from(rgba(124,124,124,0.4)), to(rgba(124,124,124,0.9)));
+}
+
+div#right_bottom{
+	width: 260px;
+	height: 260px;
+	background-size: 100% 100%;
+	background: url('../img/facebook.png') no-repeat;
 }
